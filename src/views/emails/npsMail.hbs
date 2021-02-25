@@ -1,0 +1,143 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+  }  
+
+  div.container {
+    max-width: 500px;
+    width: 90%;
+    margin: 2rem auto 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    border-radius: 8px;
+    padding: 1rem 0;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  div.container label {
+    font-size: 1.4rem;
+    color: #171614;
+  }
+
+  div.container label strong {
+    color: #8257e6;
+    border-bottom: 3px solid #8267e6;
+  }
+
+  div.container h3.title {
+    color: #8257e6;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+
+  div.container strong.description {
+    max-width: 450px;
+    width: 90%;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #171614;
+  }
+
+  div.level {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 450px;
+    width: 90%;
+    padding-top: 1rem;
+    border-top: 1px solid #E3DEC3;
+  }
+
+  div.level span {
+    color: #8257e6;
+    padding: 0.1rem;
+  }
+
+  div.answers {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    max-width: 450px;
+    width: 90%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E3DEC3;
+  }
+
+  div.answers a{
+    padding: 10px;
+    background: #8257e6;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  div.answers a:hover{
+    background: #6d4fb3
+  }
+  
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  footer strong {
+    font-size: 0.9rem;
+    color: #999;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+    color: #999;
+    margin-top: 0.3rem;
+  }
+
+  footer h3 strong {
+    font-size: 1rem;
+    color: #8257e6;
+    border-bottom: 2px solid #8257e6;
+  }
+</style>
+
+<div class="container">
+  <label>Olá <strong>{{name}}</strong>, tudo bem?</label>
+
+  <h3 class="title">{{title}}</h3>
+  <strong class="description">{{description}}</strong>
+
+  <div class="level">
+    <span>👎 Pouco provável</span>
+    <span>👍 Muito provável</span>
+  </div>
+  <div class="answers">
+    <a href="{{link}}/1?u={{user_id}}">1</a>
+    <a href="{{link}}/2?u={{user_id}}">2</a>
+    <a href="{{link}}/3?u={{user_id}}">3</a>
+    <a href="{{link}}/4?u={{user_id}}">4</a>
+    <a href="{{link}}/5?u={{user_id}}">5</a>
+    <a href="{{link}}/6?u={{user_id}}">6</a>
+    <a href="{{link}}/7?u={{user_id}}">7</a>
+    <a href="{{link}}/8?u={{user_id}}">8</a>
+    <a href="{{link}}/9?u={{user_id}}">9</a>
+    <a href="{{link}}/10?u={{user_id}}">10</a>
+  </div>
+  
+    <footer>
+    <strong>Sua opinião é muito importante para nós.</strong>
+      <h3>Equipe | <strong>NLW</strong> 🚀</h3>
+    </footer>
+</div>
