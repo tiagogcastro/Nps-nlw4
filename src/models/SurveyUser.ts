@@ -23,6 +23,7 @@ class SurveyUser {
   @ManyToOne(() => Survey)
   @JoinColumn({name: "survey_id"})
   survey: Survey;
+  
   @Column()
   value: number;
 
