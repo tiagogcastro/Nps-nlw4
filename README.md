@@ -65,7 +65,7 @@ ___
   <p>➡ Ao instalar tudo necessário, abra uma pasta em seu editor de código e vá no cmd dele(no Vscode o nome é "terminal") ou abra o cmd da sua máquina, digite e execute: </p>
   <p> 
 
-    git clone https://github.com/Tiaguin061/Gostack-nodeJS-nivel2
+    git clone https://github.com/Tiaguin061/Nps-nlw4
   </p>
   <p>➡ Entre na pasta do projeto(a que acabou de clonar), digite e execute: </p>
   <p>
